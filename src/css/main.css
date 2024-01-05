@@ -18,11 +18,16 @@ Date: January 2024
   --clr-white: hsl(0, 0%, 100%);
   --clr-soft-white: hsl(0, 0%, 96%);
   --clr-light-gray: hsl(254, 6%, 58%);
+  --clr-gunmetal: hsla(212, 21%, 14%, 1);
   --clr-near-black: hsl(250, 18%, 19%);
   --clr-red: hsl(0, 89%, 66%);
+  /* page background */
+  --bg-primary-light: hsla(28, 38%, 92%, 1);
+  /* box-shadow  */
+  --box-shadow-primary: 0 0 0.5rem rgba(0, 0, 0, 0.35);
   /* backgrounds */
   /* Border Radius */
-  --br-extra-soft: 5px;
+  --br-extra-soft: 6px;
 }
 
 /* RESET */
@@ -68,5 +73,91 @@ body {
   min-height: 100vh;
   font-family: var(--ff-primary);
   font-size: var(--fs-400);
+  color: var(--clr-near-black);
+  background: var(--bg-primary-light);
+}
+
+/* Header Styles */
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  background: var(--clr-red);
+  color: var(--clr-white);
+}
+
+.header-logo {
+  width: 24px;
+}
+
+.title {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-600);
+  color: var(--clr-near-black);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Styles */
+.travel-cards {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--br-extra-soft);
+  overflow: hidden;
+  color: var(--clr-gunmetal);
+  background: var(--clr-white);
+  box-shadow: var(--box-shadow-primary);
+}
+
+.card-content {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.local-container {
+  display: flex;
+  align-items: center;
+}
+
+.location-pin {
+  margin-right: 4px;
+}
+
+.location-name {
+  margin-right: 12px;
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+}
+
+.location-link {
+  font-size: var(--fs-300);
+  color: var(--clr-light-gray);
+}
+
+.card-title {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-600);
+  line-height: 1.1;
+}
+
+.card-datestamp {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-600);
   color: var(--clr-near-black);
 }
