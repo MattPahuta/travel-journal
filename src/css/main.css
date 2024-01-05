@@ -1,0 +1,72 @@
+/*
+Author: Matt Pahuta
+https://www.mattpahuta.com
+Date: January 2024
+*/
+:root {
+  --ff-primary: 'Inter', sans-serif;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.875rem;
+  --fs-700: 2.5rem;
+  /* Font Weights */
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+  /* Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-soft-white: hsl(0, 0%, 96%);
+  --clr-light-gray: hsl(254, 6%, 58%);
+  --clr-near-black: hsl(250, 18%, 19%);
+  --clr-red: hsl(0, 89%, 66%);
+  /* backgrounds */
+  /* Border Radius */
+  --br-extra-soft: 5px;
+}
+
+/* RESET */
+/* Josh Comeau custom css reset */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Base Styles */
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  color: var(--clr-near-black);
+}
