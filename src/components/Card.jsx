@@ -1,9 +1,6 @@
 import locationPin from "../assets/marker.svg"
 
 export default function Card(props) {
-
-  console.log(props)
-
   return (
     <div className="card">
       <img src={props.card.imageUrl} alt="" className="card-image" />

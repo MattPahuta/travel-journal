@@ -16,16 +16,14 @@ Date: January 2024
   --fw-700: 700;
   /* Colors */
   --clr-white: hsl(0, 0%, 100%);
-  --clr-soft-white: hsl(0, 0%, 96%);
-  --clr-light-gray: hsl(254, 6%, 58%);
-  --clr-gunmetal: hsla(212, 21%, 14%, 1);
-  --clr-near-black: hsl(250, 18%, 19%);
-  --clr-red: hsl(0, 89%, 66%);
+  --clr-gray: hsl(228, 2%, 50%);
+  --clr-midnight-green: hsl(183, 53%, 14%);
+  --clr-near-black: hsl(213, 22%, 8%); 
+  --clr-red: #A52422;
   /* page background */
-  --bg-primary-light: hsla(28, 38%, 92%, 1);
+  --bg-primary-light: hsl(240, 4%, 95%);
   /* box-shadow  */
   --box-shadow-primary: 0 0 0.5rem rgba(0, 0, 0, 0.35);
-  /* backgrounds */
   /* Border Radius */
   --br-extra-soft: 6px;
 }
@@ -68,7 +66,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Base Styles */
-
 body {
   min-height: 100vh;
   font-family: var(--ff-primary);
@@ -77,8 +74,8 @@ body {
   background: var(--bg-primary-light);
 }
 
-/* Header Styles */
-.header {
+.header,
+.footer {
   padding: 1.5rem 0;
   display: flex;
   justify-content: center;
@@ -86,6 +83,10 @@ body {
   gap: 1rem;
   background: var(--clr-red);
   color: var(--clr-white);
+}
+
+.footer {
+  font-size: var(--fs-300);
 }
 
 .header-logo {
@@ -116,9 +117,16 @@ body {
   display: grid;
   border-radius: var(--br-extra-soft);
   overflow: hidden;
-  color: var(--clr-gunmetal);
+  color: var(--clr-midnight-green);
   background: var(--clr-white);
   box-shadow: var(--box-shadow-primary);
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 920px;
+    grid-template-columns: 30% 1fr;
+  }
 }
 
 .card-image {
@@ -143,16 +151,21 @@ body {
   margin-right: 4px;
 }
 
+.location-name,
+.location-link,
+.card-datestamp {
+  font-size: var(--fs-300);
+}
+
 .location-name {
   margin-right: 12px;
-  font-size: var(--fs-300);
   text-transform: uppercase;
   letter-spacing: 1.75px;
+  color: var(--clr-near-black);
 }
 
 .location-link {
-  font-size: var(--fs-300);
-  color: var(--clr-light-gray);
+  color: var(--clr-gray);
 }
 
 .card-title {
@@ -162,15 +175,6 @@ body {
 }
 
 .card-datestamp {
-  font-size: var(--fs-300);
   font-weight: var(--fw-600);
   color: var(--clr-near-black);
-}
-
-@media (min-width: 768px) {
-  .card {
-    max-width: 800px;
-    grid-template-columns: 30% 1fr;
-
-  }
 }

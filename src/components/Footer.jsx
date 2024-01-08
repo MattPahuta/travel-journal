@@ -1,7 +1,8 @@
 export default function Footer() {
+
   return (
     <footer className="footer">
-      <span className="copy">Built by Matt Pahuta</span>
+      <p>A Scrimba Solo Project | Built by Matt Pahuta</p>
     </footer>
   )
 }

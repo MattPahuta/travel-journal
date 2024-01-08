@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Card from "./components/Card"
+import Footer from "./components/Footer"
 import cardData from "./data/data"
 
 
@@ -29,6 +30,7 @@ export default function App() {
           {locationCards}
         </section>
       </main>
+      <Footer />
     </>
   );
 }
