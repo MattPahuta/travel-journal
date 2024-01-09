@@ -9,19 +9,7 @@ function renderCard(card) {
 }
 
 export default function App() {
-
-  // const cards = cardData.map(card => {
-  //   return (
-  //     <Card 
-  //       key={card.id}
-  //       card={card}
-  //     />
-  //   )
-  // })
-
   const locationCards = cardData.map(renderCard)
-
-
   return (
     <>
       <Header />
