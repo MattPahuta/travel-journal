@@ -1,6 +1,6 @@
 # Travel Journal React Web App - A Scrimba Solo Project
 
-This is a solution to the Scrimba solo project: build a travel journal web app using React. This project features the use of custom components, props to dynamically display content, and Vite build tooling.
+This is a solution to the Scrimba solo project: build a travel journal web app using React. This project features the use of reusable components, props to dynamically display content, and Vite tooling to build a React-based static website.
 
 ## Table of contents
 
@@ -34,7 +34,7 @@ Personal stretch goals:
 ### Links
 
 - [Scrimba Scrim URL](https://scrimba.com/scrim/co15e4e88a4f891405caaef47)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site URL](https://mellow-chebakia-4b314d.netlify.app/)
 
 ## My process
 
